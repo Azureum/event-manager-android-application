@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3333"
+            android:layout_height="match_parent"
+            android:text="Create Event"
+            android:id="@+id/button"
+            android:background="@drawable/buttonbg2"
+
+
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3333"
+            android:layout_height="match_parent"
+            android:text="My Events"
+            android:id="@+id/button2"
+            android:background="@drawable/buttonbg2"
+             />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3333"
+            android:layout_height="match_parent"
+            android:text="Calendar"
+            android:id="@+id/button3"
+            android:background="@drawable/buttonbg2"
+             />
+    </LinearLayout>

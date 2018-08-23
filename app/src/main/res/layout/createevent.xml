@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shridhar_manages.login.CreateEvent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/type"
+            android:entries="@array/eventtype"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="20px"
+             />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_below="@+id/type"
+            android:layout_alignParentStart="true"
+            android:hint="Event Name"
+            android:layout_margin="20px"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/datetime"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/name"
+            android:hint="@string/datetime"
+            android:paddingLeft="4dp"
+            android:layout_margin="20px"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/datetime"
+            android:inputType="datetime"
+            android:hint="Time"
+            android:id="@+id/timeTextView"
+            android:paddingLeft="4dp"
+            android:layout_margin="20px"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeTextView"
+            android:gravity="left"
+            android:id="@+id/alarmbar"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Alarm Notification"
+                android:id="@+id/alarmtext"
+                android:paddingLeft="4dp"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="0px"
+                android:textSize="20dp"/>
+            <ToggleButton
+                android:text="Alarm"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alarmtoggle"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="0px"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/desc"
+            android:layout_below="@+id/alarmbar"
+            android:layout_alignParentStart="true"
+            android:hint="Description"
+            android:textSize="20dp"
+            android:height="100dp"
+            android:layout_margin="20px"
+            android:gravity="top"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Event"
+            android:id="@+id/addevent"
+            android:layout_below="@+id/desc"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
